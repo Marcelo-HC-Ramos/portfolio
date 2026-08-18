@@ -9,3 +9,17 @@
 .complement-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
 .complement-tags span{font-size:10px;border:1px solid #263858;border-radius:999px;padding:4px 7px;color:#B9C7DE}
 .project-actions{display:flex;gap:16px;flex-wrap:wrap}
+
+
+/* Capas visuais intuitivas dos projetos */
+.project-cover.image-cover{background:#0a1120;position:relative;isolation:isolate}
+.project-cover.image-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,10,20,.04),rgba(5,10,20,.30));z-index:1;pointer-events:none}
+.project-cover.image-cover>img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease,filter .35s ease}
+.project-card:hover .project-cover.image-cover>img{transform:scale(1.025);filter:saturate(1.06)}
+.image-badge{position:absolute;left:16px;top:16px;z-index:2;background:rgba(6,12,24,.82);border:1px solid rgba(110,168,254,.42);color:#dbe7ff;padding:7px 10px;border-radius:999px;font:500 10px 'DM Mono',monospace;letter-spacing:.08em;backdrop-filter:blur(10px)}
+.inspirar-cover{display:flex!important;align-items:center;justify-content:center}
+.inspirar-cover>img{width:48%!important;object-fit:contain!important;padding:12px 0}
+.image-overlay{position:absolute;left:18px;right:18px;bottom:15px;z-index:2;display:flex;justify-content:space-between;align-items:end;gap:12px;padding:11px 13px;border-radius:12px;background:rgba(6,12,24,.80);border:1px solid rgba(110,168,254,.28);backdrop-filter:blur(9px)}
+.image-overlay strong{font:500 10px 'DM Mono',monospace;color:#dbe7ff;letter-spacing:.06em}.image-overlay span{font-size:11px;color:#aebbd0}
+.complement-image{width:100%;height:120px;object-fit:cover;display:block;border-radius:12px;margin-bottom:15px;border:1px solid #263858;background:#09101d}
+@media(max-width:640px){.project-cover.image-cover{height:205px}.inspirar-cover>img{width:55%!important}.image-overlay{flex-direction:column;align-items:flex-start;gap:3px}}
