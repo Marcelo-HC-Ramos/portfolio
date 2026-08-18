@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650">
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#10182c"/><stop offset="1" stop-color="#080c17"/></linearGradient></defs>
+<rect width="1200" height="650" rx="34" fill="url(#bg)"/>
+<text x="70" y="92" fill="#9ba8bd" font-family="monospace" font-size="22">MYSQL 8+ · MODELAGEM · TRIGGERS</text>
+<text x="70" y="145" fill="#f1f5ff" font-family="Arial" font-size="46" font-weight="700">Database Opinate</text>
+<g stroke="#334d7d" stroke-width="4" fill="#0e192c"><line x1="390" y1="320" x2="240" y2="220"/><line x1="390" y1="320" x2="240" y2="430"/><line x1="390" y1="320" x2="560" y2="220"/><line x1="390" y1="320" x2="560" y2="430"/><line x1="760" y1="320" x2="560" y2="220"/><line x1="760" y1="320" x2="560" y2="430"/><line x1="760" y1="320" x2="950" y2="220"/><line x1="760" y1="320" x2="950" y2="430"/></g>
+<g fill="#101d36" stroke="#6ea8fe" stroke-width="3"><rect x="320" y="265" width="140" height="110" rx="18"/><rect x="690" y="265" width="140" height="110" rx="18"/><rect x="175" y="175" width="130" height="90" rx="16"/><rect x="175" y="385" width="130" height="90" rx="16"/><rect x="495" y="175" width="130" height="90" rx="16"/><rect x="495" y="385" width="130" height="90" rx="16"/><rect x="885" y="175" width="130" height="90" rx="16"/><rect x="885" y="385" width="130" height="90" rx="16"/></g>
+<g fill="#f1f5ff" font-family="Arial" text-anchor="middle" font-size="18"><text x="390" y="316">PROPOSAL</text><text x="390" y="342">USERS</text><text x="760" y="316">VOTES</text><text x="760" y="342">COMMENTS</text><text x="240" y="228">USERS</text><text x="240" y="438">COMMUNITY</text><text x="560" y="228">CATEGORY</text><text x="560" y="438">PARLIAMENT</text><text x="950" y="228">ACTIVITY</text><text x="950" y="438">INDEXES</text></g>
+</svg>
