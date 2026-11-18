@@ -3,289 +3,258 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Marcelo H. Ramos — Ciência de Dados, Python, SQL, Power BI e projetos acadêmicos.">
+  <title>Marcelo H. Ramos | Análise de Dados</title>
+  <meta name="description" content="Marcelo H. Ramos — 3 anos de experiência em operações administrativas e graduando em Ciência de Dados. Projetos em Python, SQL e Power BI.">
   <meta name="author" content="Marcelo H. Ramos">
-  <title>Marcelo H. Ramos | Portfólio</title>
+  <meta property="og:title" content="Marcelo H. Ramos | Análise de Dados">
+  <meta property="og:description" content="Da operação administrativa à análise de dados: projetos em Python, SQL e Power BI.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
   <header class="topbar">
     <div class="container nav-wrap">
-      <a class="brand" href="#inicio"><span>MR</span> Marcelo H. Ramos</a>
-      <nav>
+      <a class="brand" href="#inicio">Marcelo H. Ramos</a>
+      <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <nav id="menu" aria-label="Principal">
         <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
         <a href="#projetos">Projetos</a>
-        <a href="#stack">Tecnologias</a>
-        <a href="#experiencia">Experiência</a><a href="#trajetoria">Aprendizados</a>
+        <a href="#habilidades">Habilidades</a>
         <a href="#contato">Contato</a>
+        <a class="nav-cta" href="files/Curriculo_Marcelo_H_Ramos.pdf" target="_blank" rel="noopener">Currículo</a>
       </nav>
-      <button class="menu-btn" aria-label="Abrir menu">☰</button>
     </div>
   </header>
 
-  <main>
+  <main id="conteudo">
+    <!-- HERO -->
     <section id="inicio" class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">PORTFÓLIO ACADÊMICO &amp; PRÁTICO</p>
-          <h1>Dados transformados em<br><span class="accent">soluções que fazem sentido.</span></h1>
-          <p class="hero-text">
-            Projetos desenvolvidos ao longo da graduação, reunindo análise de dados,
-            Python, SQL, Power BI, aplicações web e fundamentos de lógica.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#projetos">Ver projetos</a>
-            <a class="btn ghost" href="https://github.com/marcelo-hc-ramos" target="_blank" rel="noopener">GitHub</a>
-          </div>
-          <div class="hero-tags">
-            <span>Python</span><span>SQL</span><span>Power BI</span><span>Pandas</span><span>Excel</span><span>Data Analytics</span>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="code-window">
-            <div class="window-top"><span></span><span></span><span></span></div>
-            <pre><code>data = clean(dataset)
-insights = analyze(data)
-dashboard = visualize(insights)
-
-print("problema → dados → decisão")</code></pre>
-          </div>
-          <div class="metric-row">
-            <div><strong>05</strong><small>projetos</small></div>
-            <div><strong>04+</strong><small>áreas técnicas</small></div>
-            <div><strong>100%</strong><small>aprendizado prático</small></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sobre" class="section">
-      <div class="container narrow">
-        <p class="section-kicker">SOBRE</p>
-        <h2>Estudante de Ciência de Dados, com experiência operacional e foco em Data Analytics.</h2>
-        <p class="lead">
-          Sou Analista I na Tecban e estudante de Ciência de Dados na FATEC Cotia.
-          Minha formação e experiência combinam rotina operacional, análise de dados,
-          Python e Power BI, com objetivo de desenvolver minha carreira na área de dados.
+      <div class="container">
+        <p class="eyebrow">Analista I na Tecban · Graduando em Ciência de Dados</p>
+        <h1>Da operação administrativa<br>à <span class="accent">análise de dados</span>.</h1>
+        <p class="hero-text">
+          Há mais de 3 anos acompanho processos, qualidade e performance em uma operação real.
+          Agora uno essa vivência a Python, SQL e Power BI para transformar números em decisões.
         </p>
-        <div class="about-grid">
-          <div class="about-box">
-            <h3>Experiência</h3>
-            <p>Atuação na Tecban desde 2023, passando por Jovem Aprendiz, Assistente Administrativo I e, atualmente, Analista I, com foco em administração, qualidade e performance das movimentações de máquinas.</p>
-          </div>
-          <div class="about-box">
-            <h3>Formação</h3>
-            <p>Ciência de Dados — FATEC / Centro Universitário Paula Souza. Formação presencial e noturna, com previsão de conclusão em junho de 2027.</p>
-          </div>
-          <div class="about-box">
-            <h3>Especialização contínua</h3>
-            <p>Cursos recentes em Python para Dados, estruturas de dados, funções, exceções e orientação a objetos, além de fundamentos de AWS.</p>
-          </div>
-          <div class="about-box">
-            <h3>Objetivo profissional</h3>
-            <p>Aplicar programação, análise e visualização de dados para transformar informações em soluções que apoiem decisões.</p>
-          </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projetos">Ver meus projetos</a>
+          <a class="btn" href="files/Curriculo_Marcelo_H_Ramos.pdf" target="_blank" rel="noopener">Baixar currículo</a>
+        </div>
+        <dl class="facts">
+          <div><dt>3+ anos</dt><dd>de experiência na Tecban, em 3 cargos</dd></div>
+          <div><dt>5 projetos</dt><dd>com Python, SQL, Power BI e web</dd></div>
+          <div><dt>Jun/2027</dt><dd>conclusão em Ciência de Dados, FATEC Cotia</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <p class="kicker">Sobre mim</p>
+        <h2>Quem sou e o que busco</h2>
+        <div class="about">
+          <p class="lead">
+            Comecei como Jovem Aprendiz e cresci até Analista I, sempre ligado à administração, à qualidade e ao
+            desempenho das movimentações de máquinas (ATM) para clientes. Esse dia a dia me ensinou a lidar com prazos,
+            volume de informação e responsabilidade com números.
+          </p>
+          <p class="lead">
+            Na FATEC Cotia (Ciência de Dados, noturno), coloquei a teoria em prática com projetos de análise, banco de
+            dados e dashboards. Busco uma <strong>oportunidade de estágio ou posição júnior em dados</strong>, onde eu
+            possa aplicar esse conjunto de conhecimentos.
+          </p>
+        </div>
+
+        <h3 class="sub">O que minha trajetória administrativa traz para a área de dados</h3>
+        <div class="bridge">
+          <article>
+            <h4>Olhar para indicadores</h4>
+            <p>Acompanhar qualidade e performance da operação me acostumou a pensar em métricas e resultados, não só em tarefas.</p>
+          </article>
+          <article>
+            <h4>Organização de informação</h4>
+            <p>Organizar faturamento e movimentações exige dados corretos e conferidos, o mesmo cuidado necessário na limpeza de bases.</p>
+          </article>
+          <article>
+            <h4>Contexto de negócio</h4>
+            <p>Conheço como uma operação funciona por dentro, o que ajuda a entender qual pergunta o dado precisa responder.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="projetos" class="section projects-section">
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="section alt">
       <div class="container">
-        <p class="section-kicker">PROJETOS</p>
-        <div class="section-head">
-          <div>
-            <h2>Projetos em destaque</h2>
-            <p>Seleção dos trabalhos que melhor representam meu desenvolvimento técnico.</p>
-          </div>
-          <div class="filter-group" role="group" aria-label="Filtros de projetos">
-            <button class="filter active" data-filter="all">Todos</button>
-            <button class="filter" data-filter="python">Python</button>
-            <button class="filter" data-filter="bi">BI</button>
-            <button class="filter" data-filter="sql">SQL</button>
-            <button class="filter" data-filter="web">Web</button>
-          </div>
+        <p class="kicker">Experiência profissional</p>
+        <h2>Três anos de evolução na mesma empresa</h2>
+        <ol class="timeline">
+          <li>
+            <span class="period">Mai/2025 – atual</span>
+            <h3>Analista I <small>Tecban</small></h3>
+            <p>Administração, qualidade e performance das movimentações de máquinas a serviço do cliente.</p>
+          </li>
+          <li>
+            <span class="period">Mar/2024 – Abr/2025</span>
+            <h3>Assistente Administrativo I <small>Serviços Integrados TecBan</small></h3>
+            <p>Administração e apoio em projetos de movimentação de máquinas.</p>
+          </li>
+          <li>
+            <span class="period">Jul/2023 – Fev/2024</span>
+            <h3>Jovem Aprendiz <small>Serviços Integrados TecBan</small></h3>
+            <p>Organização do faturamento na área de movimentação de ATM.</p>
+          </li>
+        </ol>
+        <div class="edu">
+          <h3>Formação</h3>
+          <p><strong>Ciência de Dados</strong> — FATEC Cotia (Centro Paula Souza), presencial/noturno · previsão de conclusão em Jun/2027.</p>
+          <p class="muted">Cursos complementares: Python para Dados (estruturas de dados, funções, exceções e orientação a objetos) e fundamentos de AWS.</p>
         </div>
+      </div>
+    </section>
 
-        <div class="projects-grid">
-          <article class="project-card featured" data-tags="python web sql">
-            <div class="project-cover image-cover">
-              <img src="assets/illustrations/sentimento.svg" alt="Ilustração de análise de sentimentos políticos com textos, categorias e gráfico de classificação">
-              <span class="image-badge">01 · PYTHON · NLP</span>
-            </div>
-            <div class="project-body">
-              <div class="project-meta"><span>Python</span><span>Streamlit</span><span>SQL</span><span>Análise de Sentimentos</span></div>
-              <h3>Sentimento Político</h3>
-              <p>
-                Aplicação interativa para explorar análise de sentimentos em conteúdo político,
-                transformando dados textuais em visualizações e interpretações mais acessíveis.
-              </p>
-              <div class="project-detail">
-                <strong>O que demonstra</strong>
-                <span>tratamento de dados + análise textual + interface interativa</span>
-              </div>
-              <a class="project-link" href="https://sentimento-politico.streamlit.app" target="_blank" rel="noopener">Abrir aplicação ↗</a>
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <p class="kicker">Projetos</p>
+        <h2>Projetos de dados que realizei</h2>
+        <p class="section-sub">Cada projeto mostra o problema, o que fiz e as ferramentas usadas. Abra o case para ver os detalhes.</p>
 
-              <div class="project-complement">
-                <img class="complement-image" src="assets/illustrations/sql.svg" alt="Diagrama ilustrativo da modelagem relacional do Database Opinate">
-                <div class="complement-label">COMPLEMENTO TÉCNICO</div>
-                <h4>Database Opinate</h4>
-                <p>
-                  Banco de dados relacional que complementa o projeto, modelando usuários, propostas,
-                  comentários, votos, comunidades e parlamentares. O código utiliza MySQL 8+, chaves
-                  estrangeiras, triggers e índices.
-                </p>
-                <div class="complement-tags"><span>MySQL 8+</span><span>Modelagem relacional</span><span>Triggers</span><span>Índices</span></div>
-                <a class="project-link" href="Database%20Opinate.sql" target="_blank">Ver código SQL ↗</a>
+        <div class="projects">
+          <!-- Inspirar -->
+          <article class="card project featured">
+            <div class="cover cover-contain"><img src="assets/inspirar_preview.jpg" alt="Identidade visual do Projeto Inspirar" loading="lazy"></div>
+            <div class="body">
+              <div class="tags"><span>Power BI</span><span>Dashboard</span><span>Indicadores</span></div>
+              <h3>Projeto Inspirar — Dashboard de engajamento</h3>
+              <ul class="facts-list">
+                <li><b>Problema:</b> entender engajamento e perfil dos pacientes atendidos.</li>
+                <li><b>O que fiz:</b> dashboard com indicadores, filtros, funil de retenção e análises demográficas, em dois painéis.</li>
+              </ul>
+              <div class="links">
+                <a href="cases/inspirar.html">Ver case →</a>
+                <a href="files/V2-finalProjeto_Inspirar.pbix" download>Baixar arquivo .pbix</a>
               </div>
             </div>
           </article>
 
-          <article class="project-card" data-tags="web">
-            <div class="project-cover image-cover">
-              <img src="assets/illustrations/logica.svg" alt="Ilustração de lógica matemática com tabela-verdade e conectivos lógicos">
-              <span class="image-badge">02 · WEB · EDUCAÇÃO</span>
-            </div>
-            <div class="project-body">
-              <div class="project-meta"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-              <h3>Lógica Matemática</h3>
-              <p>
-                Site educacional criado para organizar conteúdos de Lógica Matemática,
-                tornando temas como proposições e formas normais mais fáceis de consultar.
-              </p>
-              <div class="project-detail">
-                <strong>O que demonstra</strong>
-                <span>estruturação de conteúdo + front-end + experiência de aprendizagem</span>
-              </div>
-              <a class="project-link" href="https://marcelo-hc-ramos.github.io/trabalhologicamatematica/" target="_blank" rel="noopener">Ver projeto ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card" data-tags="python">
-            <div class="project-cover image-cover">
-              <img src="assets/fipe_plot_95_0.png" alt="Gráfico de dispersão da valorização e desvalorização da Tabela FIPE">
-              <span class="image-badge">03 · PYTHON · FIPE</span>
-            </div>
-            <div class="project-body">
-              <div class="project-meta"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+          <!-- FIPE -->
+          <article class="card project">
+            <div class="cover"><img src="assets/fipe_plot_95_0.png" alt="Gráfico de dispersão da valorização e desvalorização na Tabela FIPE" loading="lazy"></div>
+            <div class="body">
+              <div class="tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
               <h3>Análise de preços — Tabela FIPE</h3>
-              <p>
-                Pipeline exploratório com filtragem de marcas, limpeza, seleção de períodos,
-                cálculo de valorização/desvalorização, estatística descritiva e identificação de outliers.
-              </p>
-              <div class="project-detail">
-                <strong>Escopo</strong>
-                <span>2018–2022 · Toyota · Honda · Hyundai · Renault · Volkswagen</span>
-              </div>
-              <div class="project-actions">
-                <a class="project-link" href="https://colab.research.google.com/github/marcelo-hc-ramos/portfolio/blob/main/FIPE_Analise_Completa_Colab.ipynb" target="_blank" rel="noopener">Abrir no Google Colab ↗</a>
-                <a class="project-link file-link" href="FIPE_Analise_Completa_Colab.ipynb" target="_blank">Ver notebook ↗</a>
+              <ul class="facts-list">
+                <li><b>Problema:</b> comparar como o preço de carros se comportou entre marcas (2018–2022).</li>
+                <li><b>O que fiz:</b> limpeza, recortes por período, cálculo de valorização/desvalorização, estatística descritiva e outliers.</li>
+              </ul>
+              <div class="links">
+                <a href="cases/fipe.html">Ver case →</a>
+                <a href="https://colab.research.google.com/github/Marcelo-HC-Ramos/portfolio/blob/main/files/FIPE_Analise_Completa_Colab.ipynb" target="_blank" rel="noopener">Abrir no Colab ↗</a>
               </div>
             </div>
           </article>
 
-          <article class="project-card featured" data-tags="bi">
-            <div class="project-cover image-cover inspirar-cover">
-              <img src="assets/inspirar_preview.jpg" alt="Preview visual do Projeto Inspirar">
-              <div class="image-overlay"><strong>04 · PROJETO INSPIRAR</strong><span>Dashboard e análise de dados</span></div>
-            </div>
-            <div class="project-body">
-              <div class="project-meta"><span>Power BI</span><span>Dashboard</span><span>Indicadores</span></div>
-              <h3>Projeto Inspirar</h3>
-              <p>
-                Dashboard analítico com foco em engajamento e perfil de pacientes,
-                reunindo indicadores, filtros, funil de retenção e análises demográficas.
-              </p>
-              <div class="project-detail">
-                <strong>Painéis</strong>
-                <span>Visão Geral do Engajamento · Perfil dos Pacientes</span>
-              </div>
-              <a class="project-link file-link" href="V2-finalProjeto_Inspirar.pbix" target="_blank">Arquivo Power BI ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card" data-tags="python bi web">
-            <div class="project-cover image-cover">
-              <img src="assets/illustrations/transparencia.svg" alt="Dashboard ilustrativo do Portal da Transparência do Terceiro Setor de Cotia, com indicadores, gráfico de repasses e Power BI">
-              <span class="image-badge">05 · PROJETO INTEGRADOR I</span>
-            </div>
-            <div class="project-body">
-              <div class="project-meta"><span>Python</span><span>Excel</span><span>Power BI</span><span>HTML/CSS/JS</span></div>
+          <!-- Transparência -->
+          <article class="card project">
+            <div class="cover"><img src="assets/illustrations/transparencia.svg" alt="Painel do Portal da Transparência do Terceiro Setor de Cotia" loading="lazy"></div>
+            <div class="body">
+              <div class="tags"><span>Python</span><span>Excel</span><span>Power BI</span><span>Web</span></div>
               <h3>Portal da Transparência — Terceiro Setor Cotia</h3>
-              <p>
-                Projeto acadêmico e cívico desenvolvido em equipe na FATEC Cotia, em colaboração com a Prefeitura de Cotia,
-                para organizar e visualizar dados de repasses públicos às Organizações da Sociedade Civil.
-              </p>
-              <div class="project-detail">
-                <strong>Fluxo do projeto</strong>
-                <span>dados públicos do TCE-SP → tratamento com Python e Excel → dashboards em Power BI → portal web</span>
+              <ul class="facts-list">
+                <li><b>Problema:</b> tornar claros os repasses públicos às organizações da sociedade civil.</li>
+                <li><b>O que fiz:</b> em equipe e com a Prefeitura de Cotia, tratei dados do TCE-SP, montei dashboards e publiquei um portal web.</li>
+              </ul>
+              <div class="links">
+                <a href="cases/transparencia.html">Ver case →</a>
+                <a href="https://a-capelini.github.io/transparencia.cotia/index.html" target="_blank" rel="noopener">Abrir portal ↗</a>
               </div>
-              <a class="project-link" href="https://a-capelini.github.io/transparencia.cotia/index.html" target="_blank" rel="noopener">Abrir portal ↗</a>
-              <a class="project-link" href="cases/transparencia.html">Ver case ↗</a>
             </div>
           </article>
 
-</div>
+          <!-- Sentimento + Opinate -->
+          <article class="card project">
+            <div class="cover"><img src="assets/illustrations/sentimento.svg" alt="Análise de sentimentos políticos em textos" loading="lazy"></div>
+            <div class="body">
+              <div class="tags"><span>Python</span><span>Streamlit</span><span>NLP</span><span>MySQL</span></div>
+              <h3>Sentimento Político + Banco Opinate</h3>
+              <ul class="facts-list">
+                <li><b>Problema:</b> explorar a opinião expressa em conteúdo político de forma acessível.</li>
+                <li><b>O que fiz:</b> app interativo de análise de sentimentos e a modelagem do banco MySQL (chaves estrangeiras, triggers e índices).</li>
+              </ul>
+              <div class="links">
+                <a href="cases/sentimento.html">Ver case →</a>
+                <a href="https://sentimento-politico.streamlit.app" target="_blank" rel="noopener">Abrir app ↗</a>
+                <a href="cases/opinate.html">Ver banco SQL</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lógica -->
+          <article class="card project">
+            <div class="cover"><img src="assets/illustrations/logica.svg" alt="Tabela-verdade e conectivos lógicos" loading="lazy"></div>
+            <div class="body">
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <h3>Lógica Matemática — site educacional</h3>
+              <ul class="facts-list">
+                <li><b>Problema:</b> conteúdos de lógica espalhados e difíceis de consultar.</li>
+                <li><b>O que fiz:</b> site que organiza proposições e formas normais de modo claro.</li>
+              </ul>
+              <div class="links">
+                <a href="cases/logica.html">Ver case →</a>
+                <a href="https://marcelo-hc-ramos.github.io/trabalhologicamatematica/" target="_blank" rel="noopener">Abrir site ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="stack" class="section">
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section alt">
       <div class="container">
-        <p class="section-kicker">STACK</p>
-        <h2>Tecnologias que aparecem nos projetos</h2>
-        <div class="skills-grid">
-          <div class="skill-card"><span class="skill-icon">🐍</span><div><h3>Python</h3><p>Pandas, análise e preparação de dados, visualização.</p></div></div>
-          <div class="skill-card"><span class="skill-icon">🗄️</span><div><h3>SQL</h3><p>Modelagem relacional, constraints, joins, triggers e índices.</p></div></div>
-          <div class="skill-card"><span class="skill-icon">📊</span><div><h3>Power BI</h3><p>Dashboards, indicadores, filtros e exploração visual.</p></div></div>
-          <div class="skill-card"><span class="skill-icon">📈</span><div><h3>Análise de Dados</h3><p>Limpeza, métricas, estatística descritiva e identificação de padrões.</p></div></div>
-          <div class="skill-card"><span class="skill-icon">🌐</span><div><h3>Web</h3><p>HTML, CSS e JavaScript para experiências interativas.</p></div></div>
-          <div class="skill-card"><span class="skill-icon">🧠</span><div><h3>Lógica</h3><p>Proposições, formas normais, estruturas de raciocínio e conteúdo educacional.</p></div></div>
+        <p class="kicker">Habilidades</p>
+        <h2>Ferramentas que uso nos projetos</h2>
+        <div class="skills">
+          <article>
+            <h3>Análise e visualização</h3>
+            <ul class="chips"><li>Python</li><li>Pandas</li><li>Matplotlib</li><li>Power BI</li><li>Excel</li><li>Estatística descritiva</li></ul>
+          </article>
+          <article>
+            <h3>Banco de dados</h3>
+            <ul class="chips"><li>SQL</li><li>MySQL</li><li>Modelagem relacional</li><li>JOINs</li><li>Triggers</li><li>Índices</li></ul>
+          </article>
+          <article>
+            <h3>Desenvolvimento</h3>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Streamlit</li><li>Git / GitHub</li></ul>
+          </article>
+          <article>
+            <h3>Em estudo</h3>
+            <ul class="chips muted-chips"><li>Python orientado a objetos</li><li>AWS (fundamentos)</li></ul>
+          </article>
         </div>
       </div>
     </section>
 
-    
-    <section id="experiencia" class="section">
-      <div class="container narrow">
-        <p class="section-kicker">TRAJETÓRIA PROFISSIONAL</p>
-        <h2>Experiência que conecta operação e dados.</h2>
-        <div class="timeline">
-          <div class="timeline-item"><span>25</span><div><h3>Analista I — Tecban</h3><p>Maio/2025 – atual · Administração, qualidade e performance das movimentações de máquinas a serviço do cliente.</p></div></div>
-          <div class="timeline-item"><span>24</span><div><h3>Assistente Administrativo I — Serviços Integrados TecBan</h3><p>Março/2024 – Abril/2025 · Administração e apoio em projetos de movimentação de máquinas.</p></div></div>
-          <div class="timeline-item"><span>23</span><div><h3>Jovem Aprendiz — Serviços Integrados TecBan</h3><p>Julho/2023 – Fevereiro/2024 · Organização do faturamento na área de movimentação de ATM.</p></div></div>
+    <!-- CONTATO -->
+    <section id="contato" class="section contact">
+      <div class="container">
+        <p class="kicker">Contato</p>
+        <h2>Vamos conversar?</h2>
+        <p class="section-sub">Estou em busca de estágio ou vaga júnior em dados. Fico feliz em falar sobre meus projetos.</p>
+        <div class="hero-actions contact-actions">
+          <a class="btn primary" id="link-email" href="#" hidden>E-mail</a>
+          <a class="btn" id="link-linkedin" href="#" target="_blank" rel="noopener" hidden>LinkedIn</a>
+          <a class="btn" href="https://github.com/Marcelo-HC-Ramos" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="files/Curriculo_Marcelo_H_Ramos.pdf" target="_blank" rel="noopener">Currículo (PDF)</a>
         </div>
-      </div>
-    </section>
-
-<section id="trajetoria" class="section timeline-section">
-      <div class="container narrow">
-        <p class="section-kicker">APRENDIZADOS</p>
-        <h2>O que esses projetos mostram sobre minha evolução</h2>
-        <div class="timeline">
-          <div class="timeline-item"><span>01</span><div><h3>Organizar dados</h3><p>Filtrar, limpar, transformar e preparar dados antes de analisar.</p></div></div>
-          <div class="timeline-item"><span>02</span><div><h3>Analisar</h3><p>Usar métricas, estatística descritiva e comparações para encontrar padrões.</p></div></div>
-          <div class="timeline-item"><span>03</span><div><h3>Modelar</h3><p>Estruturar informações em bancos relacionais e criar regras de integridade.</p></div></div>
-          <div class="timeline-item"><span>04</span><div><h3>Comunicar</h3><p>Transformar resultados em dashboards, interfaces e explicações que outras pessoas conseguem entender.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section callout">
-      <div class="container callout-box">
-        <div>
-          <p class="section-kicker">PRÓXIMO PASSO</p>
-          <h2>Este portfólio acompanha minha transição de estudante para profissional.</h2>
-          <p>Novos projetos podem ser adicionados aqui à medida que eu avanço em Python, SQL, BI, engenharia e ciência de dados.</p>
-        </div>
-        <a class="btn primary" href="https://github.com/marcelo-hc-ramos" target="_blank" rel="noopener">Ver GitHub</a>
-      </div>
-    </section>
-
-    <section id="contato" class="section contact-section">
-      <div class="container narrow center">
-        <p class="section-kicker">CONTATO</p>
-        <h2>Vamos conversar sobre dados e tecnologia?</h2>
-        <p class="lead">Use meu GitHub para acompanhar os projetos e códigos publicados.</p>
-        <a class="btn primary" href="https://github.com/marcelo-hc-ramos" target="_blank" rel="noopener">github.com/marcelo-hc-ramos ↗</a>
       </div>
     </section>
   </main>
@@ -293,7 +262,7 @@ print("problema → dados → decisão")</code></pre>
   <footer>
     <div class="container footer-wrap">
       <span>© <span id="year"></span> Marcelo H. Ramos</span>
-      <span>Portfólio acadêmico · Ciência de Dados</span>
+      <span>Análise de Dados · Python · SQL · Power BI</span>
     </div>
   </footer>
 
