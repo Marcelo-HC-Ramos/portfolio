@@ -2,8 +2,8 @@
    Preencha abaixo para exibir os botões na seção Contato.
    Deixe vazio ("") para ocultar o botão. */
 const CONTATO = {
-  email: "",     // ex.: "seunome@email.com"
-  linkedin: ""   // ex.: "https://www.linkedin.com/in/seu-perfil"
+  email: "marcellohc.ramos@outlook.com",
+  linkedin: "https://www.linkedin.com/in/marcelo-ramos-629865259"
 };
 
 const emailBtn = document.getElementById('link-email');
