@@ -131,3 +131,10 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
   .footer-wrap{flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.btn{transition:none}}
+
+/* Seletor de idioma */
+.lang{display:flex;gap:2px;margin-left:18px;padding:3px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.lang button{border:0;background:none;color:var(--muted);font:600 12px Inter,sans-serif;padding:5px 9px;border-radius:7px;cursor:pointer}
+.lang button:hover{color:var(--text)}
+.lang button[aria-pressed="true"]{background:var(--accent);color:#fff}
+@media(max-width:900px){.lang{order:4;margin-left:auto;margin-right:10px}.menu-btn{order:5}}
